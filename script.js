@@ -209,3 +209,20 @@ const summary = `${title} is a wonderful book with  ${pages} long.
 Was written by ${author} and has ${hasMovieAdaptation} `;
 summary;
 
+//ternary operator
+
+const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
+pagesRange;
+console.log(`The book ${title} has ${pages} and it is  ${pagesRange}`);
+
+//fucntion declaration
+/* function getYear(str) {
+  return str.split("-")[0];
+} */
+
+//arrow function
+const getYear = (str) => {
+  return str.split("-")[0];
+};
+console.log(getYear(publicationDate));
+
