@@ -178,7 +178,26 @@ console.log(
 /* const primaryGenre = genres[0];
 const secondaryGenres = genres[1]; */
 
+
+
 //Destructuring of array Genres
+//rest operator ...otherGenres
+
+const [primaryGenre, ...otherGenres] = genres;
+console.log(primaryGenre, otherGenres);
+
+//spread operator
+const newgenres = [...genres, "epic fantasy"];
+console.log(newgenres);
+
+const updatedBook = {
+  ...book,
+  //Adding a new property
+  moviePublicationDate: "2012-12-12",
+  //overwriting pages
+  pages: 4412,
+};
+console.log(updatedBook);
 
 const [primaryGenre, secondaryGenres] = genres;
 console.log(primaryGenre + " and  " + secondaryGenres);
