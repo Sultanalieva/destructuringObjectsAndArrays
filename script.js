@@ -201,3 +201,11 @@ console.log(updatedBook);
 
 const [primaryGenre, secondaryGenres] = genres;
 console.log(primaryGenre + " and  " + secondaryGenres);
+
+
+//template literals
+
+const summary = `${title} is a wonderful book with  ${pages} long. 
+Was written by ${author} and has ${hasMovieAdaptation} `;
+summary;
+
