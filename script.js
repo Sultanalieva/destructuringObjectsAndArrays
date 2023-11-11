@@ -225,4 +225,29 @@ const getYear = (str) => {
   return str.split("-")[0];
 };
 console.log(getYear(publicationDate));
+const newBook = {
+  id: 6,
+  title: "Harry Potter and Chamber of Secrets",
+  author: "J.K. Rowling",
+};
+const booksAfterAdd = [...books, newBook];
+booksAfterAdd;
 
+// 2) Delete a book object from array
+
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
+booksAfterDelete;
+
+const newBook2 = {
+  id: 4,
+  title: "Jyrgalan",
+  author: "C.K.Lemon",
+};
+const booksAfterAdd1 = [...books, newBook2];
+booksAfterAdd1;
+//update book object in the array
+
+const booksAfterUpdate = booksAfterDelete.map((book) =>
+  book.id === 1 ? { ...book, pages: 12000 } : book
+);
+booksAfterUpdate;
