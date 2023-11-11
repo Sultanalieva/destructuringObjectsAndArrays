@@ -251,3 +251,8 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 12000 } : book
 );
 booksAfterUpdate;
+//fetsch API Asynchronous JavaScript: Promises
+
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
